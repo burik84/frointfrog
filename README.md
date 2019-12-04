@@ -10,8 +10,8 @@ src
     img
     pug
     js
-dev [development]
-prod [production]
+dist [development]
+build [production]
 
 ### Используемые инструменты
 webpack
