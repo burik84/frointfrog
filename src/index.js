@@ -1,1 +1,1 @@
-// import './scss/style.scss'
+import css from './style.css';

@@ -5,13 +5,13 @@
 Проект под конкурс детских рисунков для лягушкавобмороке.рф
 
 ### Структура проекта
-src
-    service
-    img
-    pug
-    js
-dist [development]
-build [production]
+* src
+  - service
+  - img
+  - pug
+  - js
+* dist [development] для разработки
+* build [production] для публикации
 
 ### Используемые инструменты
 webpack
