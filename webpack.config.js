@@ -13,12 +13,7 @@ module.exports = {
     },
 
     output: {
-        filename: '[name].js',
+        filename: 'bundle.js',
         path: PATHS.dist,
-        publicPath: '/'
-    },
-
-    devServer: {
-        overlay: true
     },
 }
