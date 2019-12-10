@@ -1,4 +1,11 @@
 @import 'utils/fonts';
+@import '~bootstrap/scss/bootstrap-grid';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: green;

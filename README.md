@@ -8,10 +8,12 @@
 * src
   - service
   - img
-  - pug
+  - html
+    - templates
+    - pages
   - js
-* dist [development] для разработки
-* build [production] для публикации
+* dist [development] для разработки npm run dev
+* build [production] для публикации npm run build
 
 ### Используемые инструменты
 webpack

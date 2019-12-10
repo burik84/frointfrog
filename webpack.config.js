@@ -1,6 +1,9 @@
-const path = require('path')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const {
+    CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 
 // const PATHS = {
 //     src: path.join(__dirname, './src'),
@@ -10,18 +13,20 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: 'development',
-    entry: './src',
+    entry: './src/js/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js'
+        filename: './js/bundle.js'
     },
+    devtool: "source-map",
     module: {
         rules: [{
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.m?js$/,
+                test: /\.js$/,
+                include: path.resolve(__dirname, 'src/js'),
                 exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',
@@ -33,8 +38,6 @@ module.exports = {
         ],
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            filename: './src/index.html'
-        }),
+        new CleanWebpackPlugin(),
     ],
 };
