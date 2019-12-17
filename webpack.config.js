@@ -12,19 +12,25 @@ const {
 // }
 
 module.exports = {
-    mode: 'development',
-    entry: './src/js/index.js',
+    // entry: ['./src/js/index.js',
+    //     './src/scss/style.scss'
+    // ],
+    entry: {
+        app: './src/index.js'
+    },
+    // output: {
+    //     path: path.resolve(__dirname, 'dist'),
+    //     filename: './js/bundle.js'
+    // },
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: './js/bundle.js'
+        // Имя выходных файлов если несколько точек входа - [name].js
+        filename: "[name].js",
+        path: path.resolve(__dirname, './dist'),
+        publicPath: '/dist'
     },
     devtool: "source-map",
     module: {
         rules: [{
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
-            },
-            {
                 test: /\.js$/,
                 include: path.resolve(__dirname, 'src/js'),
                 exclude: /(node_modules|bower_components)/,
@@ -35,9 +41,37 @@ module.exports = {
                     }
                 }
             },
+            {
+                test: /\.scss$/,
+                include: path.resolve(__dirname, 'src/scss'),
+                use: [
+                    // fallback to style-loader in development
+                    process.env.NODE_ENV !== 'production' ?
+                    'style-loader' :
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: false,
+                            url: true,
+                            import: true
+                        }
+                    }, {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: false
+                        }
+                    }
+                ],
+            },
         ],
     },
     plugins: [
         new CleanWebpackPlugin(),
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // all options are optional
+            filename: './css/style.bundle.css',
+        }),
     ],
 };
