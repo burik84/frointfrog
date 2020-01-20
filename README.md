@@ -2,7 +2,7 @@
 лягушкавобмороке.рф
 
 ## Описание
-Проект под конкурс детских рисунков для лягушкавобмороке.рф
+Проект - конкурс детских рисунков "лягушкавобмороке.рф", frointfrog.ru
 
 ### Структура проекта
 * src
@@ -16,6 +16,6 @@
 * build [production] для публикации npm run build
 
 ### Используемые инструменты
-webpack
-Pug
-scss
+* [webpack](https://webpack.js.org/)
+* [html to pug](https://html2jade.org/)
+* [scss](https://sass-scss.ru/guide/)

@@ -1,10 +1,49 @@
 doctype html
-html(lang='ru')
-    head
-        meta(charset='utf8')
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        title Лягушка в обмороке
-    body
-        h1 Лягушка в обмороке
-        script(src='./dist/bundle.js')
-        
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(http-equiv='X-UA-Compatible', content='ie=edge')
+		title Лягушка в Обмороке
+	body
+		header
+			.container
+				.row
+					.header
+						.header-logo
+							img.logo_img(src='./img/logo_frog.png', alt='логотип лягушка в обмороке')
+						// /.logo
+						.header-links
+							a.header__link(href='./rules.html') Наши правила
+		main.main(role='main')
+			.main-title
+				.main-title__heading
+					h1 Лягушка в обмороке
+				// /.main-title__heading
+				.main-title_logo
+					img.logo_img(src='./img/logo_frog.png', alt='логотип лягушка в обмороке')
+				// /.main-title_logo
+				h2 Конкурсы рисунков
+			// /.main-title
+			.main-content
+				p.main-content__text.main-content__text--left
+					| Мы проводим этот конкурс , чтобы развить в детях творческие способности, помочь детям продемонстрировать свои таланты и поделиться своим творческим воображением.
+				p.main-content__text.main-content__text--right
+					| Конкурс рисунков для детей дошкольного и школьного возраста, педагогов и учителей.
+			// /.main-content
+		footer.footer
+			.footer__links
+				a.footer__link.footer__link--help(href='') Помощь
+				a.footer__link.footer__link--support(href='') Поддержать
+				a.footer__link.footer__link--question(href='') Вопросы
+			// /.footer__links
+			.footer__copy
+				p.footer__text © 2019 лягушкавобмороке.рф - помогаем в развитие творчества у детей
+			// /.footer__copy
+			.footer_icons
+				img.footer__icon(src='./img/icons/child.png', alt='Иконка 1')
+				img.footer__icon(src='./img/icons/palette.png', alt='Иконка 2')
+				img.footer__icon(src='./img/icons/paint-brush.png', alt='Иконка 3')
+				img.footer__icon(src='./img/icons/hand-holding-heart.png', alt='Иконка 4')
+				img.footer__icon(src='./img/icons/frog.png', alt='Иконка 5')
+			// /.footer_icons

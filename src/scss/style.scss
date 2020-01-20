@@ -1,4 +1,4 @@
-// @import "utils/fonts";
+@import "utils/fonts";
 @import "utils/variables";
 @import '~bootstrap/scss/bootstrap-grid';
 
@@ -9,9 +9,10 @@
 }
 
 body {
-    background-color: green;
+    background-color: $color-bg;
 }
 
 h1 {
-    color: red;
+    color: $color-base;
 }
+@import "blocks/header";
