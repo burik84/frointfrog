@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__links {
+        margin-bottom: 8px;
+    }
+
+    &__link {
+        margin-right: 74px;
+        position: relative;
+        line-height: 1.5;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--help::after,
+        &--question::after,
+        &--support::after {
+            position: absolute;
+            margin-left: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            content: '';
+            display: inline-block;
+        }
+
+        &--help::after {
+            background: url("../img/icons/help.png") no-repeat center center;
+        }
+
+        &--support::after {
+            background: url("../img/icons/help.png") no-repeat center center;
+        }
+
+        &--question::after {
+            background: url("../img/icons/slack.png") no-repeat center center;
+        }
+    }
+}

@@ -1,18 +1,7 @@
 @import "utils/fonts";
 @import "utils/variables";
 @import '~bootstrap/scss/bootstrap-grid';
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: $color-bg;
-}
-
-h1 {
-    color: $color-base;
-}
+@import "utils/common";
 @import "blocks/header";
+@import "blocks/main";
+@import "blocks/footer";

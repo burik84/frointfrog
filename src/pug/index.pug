@@ -6,36 +6,38 @@ html(lang='en')
 		meta(http-equiv='X-UA-Compatible', content='ie=edge')
 		title Лягушка в Обмороке
 	body
-		header
+		header.header
 			.container
-				.row
-					.header
-						.header-logo
-							img.logo_img(src='./img/logo_frog.png', alt='логотип лягушка в обмороке')
-						// /.logo
-						.header-links
-							a.header__link(href='./rules.html') Наши правила
+				.header-block
+					.header-block__logo
+						img.logo_img(src='./img/logo_frog.png', alt='логотип лягушка в обмороке')
+					// /.logo
+					.header-block__links
+						a.link.header__link(href='./rules.html') Наши правила
 		main.main(role='main')
-			.main-title
-				.main-title__heading
-					h1 Лягушка в обмороке
-				// /.main-title__heading
-				.main-title_logo
-					img.logo_img(src='./img/logo_frog.png', alt='логотип лягушка в обмороке')
-				// /.main-title_logo
-				h2 Конкурсы рисунков
-			// /.main-title
-			.main-content
-				p.main-content__text.main-content__text--left
-					| Мы проводим этот конкурс , чтобы развить в детях творческие способности, помочь детям продемонстрировать свои таланты и поделиться своим творческим воображением.
-				p.main-content__text.main-content__text--right
-					| Конкурс рисунков для детей дошкольного и школьного возраста, педагогов и учителей.
-			// /.main-content
+			.container
+				.main-title
+					.main-title__heading.col-8
+						h1 Лягушка в обмороке
+					// /.main-title__heading
+					.main-title__logo.col-4
+						img.logo_img.main-title__img(src='./img/logo_frog.svg', alt='логотип лягушка в обмороке')
+					// /.main-title_logo
+				h2.header-h2.main__heading Конкурсы рисунков
+				// /.main-title
+				.main-content
+					.main-content__block
+						p.main-content__text.main-content__text--left
+							| Мы проводим конкурсы, чтобы развить в детях творческие способности, помочь детям продемонстрировать свои таланты и поделиться своим творческим воображением.
+					.main-content__block
+						p.main-content__text.main-content__text--right
+							| Конкурс рисунков для детей дошкольного и школьного возраста, педагогов и учителей.
+				// /.main-content
 		footer.footer
 			.footer__links
-				a.footer__link.footer__link--help(href='') Помощь
-				a.footer__link.footer__link--support(href='') Поддержать
-				a.footer__link.footer__link--question(href='') Вопросы
+				a.footer__link.footer__link--help.link(href='') Помощь
+				a.footer__link.footer__link--support.link(href='') Поддержать
+				a.footer__link.footer__link--question.link(href='') Вопросы
 			// /.footer__links
 			.footer__copy
 				p.footer__text © 2019 лягушкавобмороке.рф - помогаем в развитие творчества у детей

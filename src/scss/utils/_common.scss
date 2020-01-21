@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-bg;
+}
+
+h1 {
+    color: $color-base;
+}
+
+.link {
+    font-family: 'Lato Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: $color-link;
+}
+
+.row {
+    align-items: center;
+}
+
+.header-h2 {
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 2;
+    color: $color-text-title;
+}
+
+.link {
+    text-decoration: none;
+    color: $color-link;
+    font-family: 'Lato Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
