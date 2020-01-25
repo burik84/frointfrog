@@ -6,6 +6,9 @@
 
 body {
     background-color: $color-bg;
+    display: flex;
+    flex-direction: column;
+    // height: 100vh;
 }
 
 h1 {

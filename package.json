@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --config=config/webpack.config.js",
-    "server": "webpack-dev-server --config=config/webpack.config.js  --open",
+    "server": "webpack-dev-server --config=config/webpack.config.js  --open --watch",
     "prod": "webpack --config=config/webpack.prod.js"
   },
   "repository": {

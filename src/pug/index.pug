@@ -1,28 +1,12 @@
 doctype html
 html(lang='en')
-	head
-		meta(charset='UTF-8')
-		meta(name='viewport', content='width=device-width, initial-scale=1.0')
-		meta(http-equiv='X-UA-Compatible', content='ie=edge')
+	include components/head.pug
 		title Лягушка в Обмороке
 	body
-		header.header
-			.container
-				.header-block
-					.header-block__logo
-						img.logo_img(src='./img/logo_frog.png', alt='логотип лягушка в обмороке')
-					// /.logo
-					.header-block__links
-						a.link.header__link(href='./rules.html') Наши правила
+		include components/header.pug
 		main.main(role='main')
 			.container
-				.main-title
-					.main-title__heading.col-8
-						h1 Лягушка в обмороке
-					// /.main-title__heading
-					.main-title__logo.col-4
-						img.logo_img.main-title__img(src='./img/logo_frog.svg', alt='логотип лягушка в обмороке')
-					// /.main-title_logo
+				include layots/main-title.pug
 				h2.header-h2.main__heading Конкурсы рисунков
 				// /.main-title
 				.main-content
@@ -33,19 +17,4 @@ html(lang='en')
 						p.main-content__text.main-content__text--right
 							| Конкурс рисунков для детей дошкольного и школьного возраста, педагогов и учителей.
 				// /.main-content
-		footer.footer
-			.footer__links
-				a.footer__link.footer__link--help.link(href='') Помощь
-				a.footer__link.footer__link--support.link(href='') Поддержать
-				a.footer__link.footer__link--question.link(href='') Вопросы
-			// /.footer__links
-			.footer__copy
-				p.footer__text © 2019 лягушкавобмороке.рф - помогаем в развитие творчества у детей
-			// /.footer__copy
-			.footer_icons
-				img.footer__icon(src='./img/icons/child.png', alt='Иконка 1')
-				img.footer__icon(src='./img/icons/palette.png', alt='Иконка 2')
-				img.footer__icon(src='./img/icons/paint-brush.png', alt='Иконка 3')
-				img.footer__icon(src='./img/icons/hand-holding-heart.png', alt='Иконка 4')
-				img.footer__icon(src='./img/icons/frog.png', alt='Иконка 5')
-			// /.footer_icons
+		include components/footer.pug

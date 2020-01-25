@@ -1,11 +1,16 @@
 .footer {
+    // position: absolute;
+    // bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 
     &__links {
         margin-bottom: 8px;
+        display: flex;
+        flex-direction: row;
     }
 
     &__link {
@@ -21,25 +26,58 @@
         &--question::after,
         &--support::after {
             position: absolute;
+            // padding-left: 12px;
+            // right: -20%;
             margin-left: 8px;
             top: 50%;
             transform: translateY(-50%);
-            width: 30px;
-            height: 30px;
+            width: 16px;
+            height: 16px;
             content: '';
             display: inline-block;
         }
 
         &--help::after {
             background: url("../img/icons/help.png") no-repeat center center;
+            background-size: contain;
         }
 
         &--support::after {
-            background: url("../img/icons/help.png") no-repeat center center;
+            background: url("../img/icons/rub.png") no-repeat center center;
+            background-size: contain;
         }
 
         &--question::after {
             background: url("../img/icons/slack.png") no-repeat center center;
+            background-size: contain;
+        }
+    }
+
+    &__copy {
+        font-family: 'Lato Light', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: $color-text-footer;
+        margin-bottom: 12px;
+        padding: 0 12px;
+        text-align: center;
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 16px;
+    }
+
+    &__icon {
+        margin-left: 8px;
+
+        &:first-child {
+            margin-left: 0;
         }
     }
 }
