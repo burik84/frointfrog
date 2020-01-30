@@ -1,12 +1,12 @@
 doctype html
-html(lang='en')
-    include components/head.pug
+html(lang='ru', prefix='og: http://ogp.me/ns#')
+    include block/head.pug
         title Лягушка в Обмороке наши правила
     body
-        include components/header.pug
-        main.main(role='main')
+        include block/header.pug
+        main.main
             .container
-                //- include layots/main-title.pug
+                //- include components/main-title.pug
                 h2.header-h2.main__heading Наши правила
                 .main-items
                     .main-item
@@ -15,4 +15,4 @@ html(lang='en')
                     .main-item
                         p.main-item__text
                             | Если Вы внимательно прочли и выявили ошибки или появились вопросы, задайте их по электронной почте help@frointfrog.ru
-        include components/footer.pug
+        include block/footer.pug

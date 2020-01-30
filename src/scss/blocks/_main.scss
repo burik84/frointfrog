@@ -1,7 +1,7 @@
 .main {
     flex: 1 0 auto;
 
-    &-title {
+    &-name {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -20,7 +20,6 @@
 
         &__logo {
             text-align: center;
-            // margin-bottom: 128px;
         }
 
         &__img {
@@ -28,7 +27,7 @@
         }
     }
 
-    &__heading {
+    &__subtitle {
         position: relative;
         margin-bottom: 48px;
         text-align: center;
@@ -77,8 +76,6 @@
     margin-bottom: 84px;
 
     &__block {
-        // display: flex;
-        // flex-direction: column;
         margin-bottom: 84px;
 
         &:last-child {
@@ -96,6 +93,10 @@
         color: $color-text;
         width: 100%;
         max-width: 600px;
+
+        &--center {
+            text-align: center;
+        }
 
         &--left,
         &--right {

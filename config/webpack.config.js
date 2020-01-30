@@ -103,6 +103,11 @@ module.exports = {
             filename: 'rules.html',
             // inject: false
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pug/404.pug',
+            filename: '404.html',
+            // inject: false
+        }),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // all options are optional

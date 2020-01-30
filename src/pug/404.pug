@@ -1,0 +1,17 @@
+doctype html
+html(lang='ru', prefix='og: http://ogp.me/ns#')
+	include block/head.pug
+		include components/favicon.pug
+		title Лягушка в Обмороке
+	body#error
+		include block/header.pug
+		main.main
+			.container
+				include components/main-error.pug
+				h2.header-h2.main__subtitle Страница отсутствует
+				.main-error
+						p.main-error__text
+							| help@frointfrog
+						.main-error__btn
+							a.btn.btn--back(href='./index.html') На главную
+		include block/footer.pug

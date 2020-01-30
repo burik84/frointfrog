@@ -1,14 +1,14 @@
 doctype html
-html(lang='en')
-	include components/head.pug
+html(lang='ru', prefix='og: http://ogp.me/ns#')
+	include block/head.pug
+		include components/favicon.pug
 		title Лягушка в Обмороке
 	body
-		include components/header.pug
-		main.main(role='main')
+		include block/header.pug
+		main.main
 			.container
-				include layots/main-title.pug
-				h2.header-h2.main__heading Конкурсы рисунков
-				// /.main-title
+				include components/main-name.pug
+				h2.header-h2.main__subtitle Конкурсы рисунков
 				.main-content
 					.main-content__block
 						p.main-content__text.main-content__text--left
@@ -17,4 +17,4 @@ html(lang='en')
 						p.main-content__text.main-content__text--right
 							| Конкурс рисунков для детей дошкольного и школьного возраста, педагогов и учителей.
 				// /.main-content
-		include components/footer.pug
+		include block/footer.pug
