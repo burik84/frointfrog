@@ -1,10 +1,10 @@
 #Определяем для каких Поисковых ботов, действуют указания
 User-agent: *
 #Что именно запрещаем индексировать на сайте
-#Disallow: /cgi-bin/*
-#Disallow: /errors/*
+Disallow: /cgi-bin/*
+Disallow: /errors/*
 Disallow: /img
-#Allow: /
+Allow: /
 
 #карту сайта
 #Sitemap: https://xn--80acccn0adcoscaz8a5etf.xn--p1ai/sitemap.xml
