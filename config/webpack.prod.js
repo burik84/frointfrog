@@ -121,6 +121,15 @@ module.exports = {
                 removeComments: true,
             },
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pug/help.pug',
+            filename: 'help.html',
+            minify: {
+                removeAttributeQuotes: true,
+                collapseWhitespace: true,
+                removeComments: true,
+            },
+        }),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // all options are optional

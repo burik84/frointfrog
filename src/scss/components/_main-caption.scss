@@ -1,0 +1,18 @@
+.main-caption {
+    margin: 0 18px;
+
+    &__text {
+        font-family: 'Lato Regular', sans-serif;
+        // align-items: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.4;
+        color: #8d9cae;
+        text-align: right;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
