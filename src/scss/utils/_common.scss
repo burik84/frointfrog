@@ -52,7 +52,7 @@ h1 {
 .btn:active,
 .btn:hover {
     display: inline-block;
-    text-decoration: none;
+    text-decoration: inherit;
     outline: none;
     text-align: center;
     cursor: pointer;

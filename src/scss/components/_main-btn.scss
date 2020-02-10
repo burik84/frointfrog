@@ -1,0 +1,29 @@
+.main {
+    &-btn {
+        padding: 24px 32px;
+        border-radius: 3px solid #ee9191;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-bottom: 72px;
+        max-width: 564px;
+        width: 100%;
+
+        &--back {
+            max-width: 320px;
+            width: 100%;
+        }
+    }
+
+    &-rules {
+        &__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:last-child {
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

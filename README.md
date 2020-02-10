@@ -19,3 +19,7 @@
 * [webpack](https://webpack.js.org/)
 * [html to pug](https://html2jade.org/)
 * [scss](https://sass-scss.ru/guide/)
+
+### На чем остановился
+Разобраться с кнопками для правил. Соединить все классы btn в одном файле стилей btn.
+Продолжить верстать и стилизовать страницы правил.
